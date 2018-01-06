@@ -36,7 +36,7 @@
                     <navigationItem key="navigationItem" id="h2C-fx-YhR">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="q5k-lR-Uzp">
                             <connections>
-                                <segue destination="r6a-0n-lGb" kind="show" id="8Rt-rk-rQK"/>
+                                <segue destination="r6a-0n-lGb" kind="show" identifier="gameSegue" id="8Rt-rk-rQK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -76,15 +76,25 @@
                                     <action selector="addTapped:" destination="r6a-0n-lGb" eventType="touchUpInside" id="VBa-t1-1fO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGu-in-WXD">
+                                <rect key="frame" x="164.5" y="354" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="r6a-0n-lGb" eventType="touchUpInside" id="oBh-gG-LxJ"/>
+                                    <action selector="deleteTapped:" destination="r6a-0n-lGb" eventType="touchUpInside" id="JpK-7C-XGs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HMN-VP-mPZ" firstAttribute="centerX" secondItem="b6v-Tk-PST" secondAttribute="centerX" id="1pK-GM-cFY"/>
                             <constraint firstItem="PMM-BW-jAd" firstAttribute="top" secondItem="HMN-VP-mPZ" secondAttribute="bottom" constant="20" id="6ju-0d-3od"/>
+                            <constraint firstItem="VGu-in-WXD" firstAttribute="top" secondItem="PMM-BW-jAd" secondAttribute="bottom" constant="20" id="FUx-6q-Agf"/>
                             <constraint firstItem="PMM-BW-jAd" firstAttribute="centerX" secondItem="b6v-Tk-PST" secondAttribute="centerX" id="GnJ-tJ-Geb"/>
                             <constraint firstItem="ScW-Hi-oOr" firstAttribute="centerX" secondItem="b6v-Tk-PST" secondAttribute="centerX" id="a0G-wh-Gwe"/>
                             <constraint firstItem="ScW-Hi-oOr" firstAttribute="top" secondItem="mKM-G3-EdW" secondAttribute="top" constant="20" id="bcv-kt-TYe"/>
                             <constraint firstItem="HMN-VP-mPZ" firstAttribute="width" secondItem="ScW-Hi-oOr" secondAttribute="width" id="czr-r6-ddJ"/>
+                            <constraint firstItem="VGu-in-WXD" firstAttribute="centerX" secondItem="b6v-Tk-PST" secondAttribute="centerX" id="pjb-dA-JiF"/>
                             <constraint firstItem="HMN-VP-mPZ" firstAttribute="top" secondItem="ScW-Hi-oOr" secondAttribute="bottom" constant="20" id="uYw-mp-KEH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mKM-G3-EdW"/>
@@ -104,13 +114,15 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="addUpdateButton" destination="PMM-BW-jAd" id="1tB-qt-WT6"/>
+                        <outlet property="deleteButton" destination="VGu-in-WXD" id="ZGE-og-Lrb"/>
                         <outlet property="gameImageView" destination="ScW-Hi-oOr" id="JMr-ej-0yU"/>
                         <outlet property="titleTextField" destination="HMN-VP-mPZ" id="1j9-xK-EeA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWn-fH-k7i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1186" y="118"/>
+            <point key="canvasLocation" x="1184.8" y="117.39130434782609"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JQC-Q0-Vcg">
