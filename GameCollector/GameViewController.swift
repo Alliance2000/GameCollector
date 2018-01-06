@@ -47,6 +47,8 @@ class GameViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     
     @IBAction func cameraTapped(_ sender: Any) {
+        imagePicker.sourceType = .camera
+        present(imagePicker, animated: true, completion: nil)
     }
     
     

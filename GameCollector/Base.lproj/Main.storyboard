@@ -77,7 +77,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGu-in-WXD">
-                                <rect key="frame" x="164.5" y="354" width="45" height="30"/>
+                                <rect key="frame" x="164.5" y="344" width="45" height="30"/>
                                 <state key="normal" title="Delete"/>
                                 <connections>
                                     <action selector="addTapped:" destination="r6a-0n-lGb" eventType="touchUpInside" id="oBh-gG-LxJ"/>
@@ -89,7 +89,7 @@
                         <constraints>
                             <constraint firstItem="HMN-VP-mPZ" firstAttribute="centerX" secondItem="b6v-Tk-PST" secondAttribute="centerX" id="1pK-GM-cFY"/>
                             <constraint firstItem="PMM-BW-jAd" firstAttribute="top" secondItem="HMN-VP-mPZ" secondAttribute="bottom" constant="20" id="6ju-0d-3od"/>
-                            <constraint firstItem="VGu-in-WXD" firstAttribute="top" secondItem="PMM-BW-jAd" secondAttribute="bottom" constant="20" id="FUx-6q-Agf"/>
+                            <constraint firstItem="VGu-in-WXD" firstAttribute="top" secondItem="PMM-BW-jAd" secondAttribute="bottom" constant="10" id="FUx-6q-Agf"/>
                             <constraint firstItem="PMM-BW-jAd" firstAttribute="centerX" secondItem="b6v-Tk-PST" secondAttribute="centerX" id="GnJ-tJ-Geb"/>
                             <constraint firstItem="ScW-Hi-oOr" firstAttribute="centerX" secondItem="b6v-Tk-PST" secondAttribute="centerX" id="a0G-wh-Gwe"/>
                             <constraint firstItem="ScW-Hi-oOr" firstAttribute="top" secondItem="mKM-G3-EdW" secondAttribute="top" constant="20" id="bcv-kt-TYe"/>
